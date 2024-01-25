@@ -2959,6 +2959,9 @@ readers do not read off random characters that represent icons */
 .fa-python:before {
   content: "\f3e2"; }
 
+.fa-pypi:before{
+  content: "\f3e2";}
+
 .fa-qq:before {
   content: "\f1d6"; }
 
