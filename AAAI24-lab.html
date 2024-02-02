@@ -99,6 +99,20 @@ footer {
   height: 40px;
 }
 
+.center { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 #myBtn {
   display: none;
@@ -296,7 +310,10 @@ footer {
 	<p></p>
 	<span>© Copyright <a href="https://pyrddlgym-project.github.io">pyRDDLGym</a> 2023.</span>
 	<p></p> -->
-	<p style="transform: translate(-50%, -50%)">© Copyright <a href="https://pyrddlgym-project.github.io">pyRDDLGym</a> 2023.</p>
+	<div class="center">
+	  <p>© Copyright <a href="https://pyrddlgym-project.github.io">pyRDDLGym</a> 2023.</p>
+	</div>
+	<!--<p style="transform: translate(-50%, -50%)">© Copyright <a href="https://pyrddlgym-project.github.io">pyRDDLGym</a> 2023.</p>-->
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </footer>
 
