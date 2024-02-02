@@ -109,6 +109,25 @@ body, html {
 	width: 100%;
 }
 
+.row {
+	width: 94%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
 
 
   
@@ -285,15 +304,17 @@ body, html {
 
 <footer>
   <div class="footer-bottom">
-      <div class="col-twelve">
-            <div class="copyright">
-                <span>© Copyright <a href="https://pyrddlgym-project.github.io">pyRDDLGym</a> 2023.</span>
-                <span>Design by <a href="https://sites.google.com/view/ataitler/home">Ayal Taitler</a></span>
-            </div>
-            <div id="go-top" style="display: none;">
-                  <a class="smoothscroll" title="Back to Top" href="#top"><i src="images/arrow-up.svg"></i></a>
-            </div>
-      </div>
+	  <div class="row">
+	      <div class="col-twelve">
+	            <div class="copyright">
+	                <span>© Copyright <a href="https://pyrddlgym-project.github.io">pyRDDLGym</a> 2023.</span>
+	                <span>Design by <a href="https://sites.google.com/view/ataitler/home">Ayal Taitler</a></span>
+	            </div>
+	            <div id="go-top" style="display: none;">
+	                  <a class="smoothscroll" title="Back to Top" href="#top"><i src="images/arrow-up.svg"></i></a>
+	            </div>
+	      </div>
+	  </div>
   </div>
 </footer>
 
