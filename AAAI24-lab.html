@@ -88,48 +88,15 @@ body, html {
 }
 
 
-.footer-bottom {
-	margin-top: 3rem;
-	text-align: center;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: grey;
+  text-align: center;
 }
-.footer-bottom .copyright span {
-	display: inline-block;
-}
-.footer-bottom .copyright span::after {
-	content: "|";
-	display: inline-block;
-	padding: 0 1rem 0 1.2rem;
-	color: rgba(255, 255, 255, 0.1);
-}
-.footer-bottom .copyright span:last-child::after {
-	display: none;
-}
-
-.col-twelve, .col-full {
-	width: 100%;
-}
-
-.row {
-	width: 94%;
-	max-width: 1140px;
-	margin: 0 auto;
-}
-.row:before, .row:after {
-	content: "";
-	display: table;
-}
-.row:after {
-	clear: both;
-}
-.row .row {
-	width: auto;
-	max-width: none;
-	margin-left: -20px;
-	margin-right: -20px;
-}
-
-
-
   
 </style>
 
@@ -302,21 +269,9 @@ body, html {
 </section>
 
 
-<footer>
-  <div class="footer-bottom">
-	  <div class="row">
-	      <div class="col-twelve">
-	            <div class="copyright">
-	                <span>© Copyright <a href="https://pyrddlgym-project.github.io">pyRDDLGym</a> 2023.</span>
-	                <span>Design by <a href="https://sites.google.com/view/ataitler/home">Ayal Taitler</a></span>
-	            </div>
-	            <div id="go-top" style="display: none;">
-	                  <a class="smoothscroll" title="Back to Top" href="#top"><i src="images/arrow-up.svg"></i></a>
-	            </div>
-	      </div>
-	  </div>
-  </div>
-</footer>
+<div class="footer">
+  <p>Footer</p>
+</div>
 
 </body>
 </html>
